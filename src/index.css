@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+@layer components {
+  .title {
+    @apply pt-5 relative text-3xl text-gray-800 font-bold text-center before:content-[''] before:absolute before:bottom-[-10px] before:left-1/2 before:transform before:-translate-x-1/2 before:w-[30px] before:h-[2px] before:bg-primary mb-6;
+  }
+}
+.slick-dots li button::before {
+  color: #1b75bc !important;
+}
