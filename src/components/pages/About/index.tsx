@@ -18,8 +18,8 @@ export const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative lg:w-2/3" data-aos="zoom-in">
-          <div className="p-6 text-lg leading-relaxed text-center text-gray-600 simple-border-animation md:text-left">
+        <div className="relative lg:w-[55%]" data-aos="zoom-in">
+          <div className="p-6 text-lg leading-relaxed text-center text-gray-600 border rounded-md simple-border-animation md:text-left">
             <p>{t('aboutInfo')}</p>
           </div>
         </div>
