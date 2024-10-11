@@ -6,7 +6,6 @@ import b2 from 'src/assets/banner/2.webp';
 import b3 from 'src/assets/banner/3.webp';
 import b4 from 'src/assets/banner/4.webp';
 
-// Массив баннеров для упрощения и избавления от повторяющегося кода
 const banners = [
   { src: b1, alt: 'Banner 1' },
   { src: b2, alt: 'Banner 2' },

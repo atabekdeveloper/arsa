@@ -10,9 +10,9 @@ export const About: React.FC = () => {
   return (
     <section id="about" className="py-10">
       <h2 className="title">{t('navAbout')}</h2>
-      <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-12">
+      <div className="flex flex-col items-center justify-between gap-8 md:flex-row lg:gap-12">
         <div data-aos="zoom-in">
-          <div className="relative flex justify-center mx-auto lg:w-11/12">
+          <div className="relative lg:w-2/4">
             <img className="about-img about-img-overlay" src={about2} alt="About 2" />
             <img className="about-img" src={about1} alt="About 1" />
           </div>

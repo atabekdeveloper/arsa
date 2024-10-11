@@ -13,57 +13,64 @@ export const Products: React.FC = () => {
       <h2 className="title">{t('navProducts')}</h2>
       <div className="container py-8 mx-auto">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          {/* Карточка продукта 1 */}
           <div
-            className="relative overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-md hover:shadow-xl"
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-md about-relative hover:shadow-xl"
             data-aos="fade-right"
           >
             <img src={p1} alt={t('productTitle1')} className="object-cover w-full h-64" />
 
-            <div className="absolute inset-0 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-primary to-transparent hover:opacity-100">
-              <div className="absolute bottom-0 p-6">
+            <div className="absolute inset-0 flex items-end transition-opacity duration-300 bg-gradient-to-t from-primary to-transparent">
+              <div className="p-6 text-container">
                 <h3 className="mb-2 text-lg font-bold text-white">{t('productTitle1')}</h3>
-                <p className="text-sm text-white">{t('productDesc1')}</p>
+                <p className="text-sm text-white about-description">{t('productDesc1')}</p>
               </div>
             </div>
           </div>
+
+          {/* Карточка продукта 2 */}
           <div
-            className="relative overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-md hover:shadow-xl"
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-md about-relative hover:shadow-xl"
             data-aos="fade-left"
           >
             <img src={p2} alt={t('productTitle2')} className="object-cover w-full h-64" />
 
-            <div className="absolute inset-0 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-primary to-transparent hover:opacity-100">
-              <div className="absolute bottom-0 p-6">
+            <div className="absolute inset-0 flex items-end transition-opacity duration-300 bg-gradient-to-t from-primary to-transparent">
+              <div className="p-6 text-container">
                 <h3 className="mb-2 text-lg font-bold text-white">{t('productTitle2')}</h3>
-                <p className="text-sm text-white">{t('productDesc2')}</p>
+                <p className="text-sm text-white about-description">{t('productDesc2')}</p>
               </div>
             </div>
           </div>
+
+          {/* Карточка продукта 3 */}
           <div
-            className="relative overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-md hover:shadow-xl"
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-md about-relative hover:shadow-xl"
             data-aos="fade-right"
             data-aos-delay="90"
           >
             <img src={p3} alt={t('productTitle3')} className="object-cover w-full h-64" />
 
-            <div className="absolute inset-0 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-primary to-transparent hover:opacity-100">
-              <div className="absolute bottom-0 p-6">
+            <div className="absolute inset-0 flex items-end transition-opacity duration-300 bg-gradient-to-t from-primary to-transparent">
+              <div className="p-6 text-container">
                 <h3 className="mb-2 text-lg font-bold text-white">{t('productTitle3')}</h3>
-                <p className="text-sm text-white">{t('productDesc3')}</p>
+                <p className="text-sm text-white about-description">{t('productDesc3')}</p>
               </div>
             </div>
           </div>
+
+          {/* Карточка продукта 4 */}
           <div
-            className="relative overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-md hover:shadow-xl"
+            className="overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-md about-relative hover:shadow-xl"
             data-aos="fade-left"
             data-aos-delay="90"
           >
             <img src={p4} alt={t('productTitle4')} className="object-cover w-full h-64" />
 
-            <div className="absolute inset-0 transition-opacity duration-300 opacity-0 bg-gradient-to-t from-primary to-transparent hover:opacity-100">
-              <div className="absolute bottom-0 p-6">
+            <div className="absolute inset-0 flex items-end transition-opacity duration-300 bg-gradient-to-t from-primary to-transparent">
+              <div className="p-6 text-container">
                 <h3 className="mb-2 text-lg font-bold text-white">{t('productTitle4')}</h3>
-                <p className="text-sm text-white">{t('productDesc4')}</p>
+                <p className="text-sm text-white about-description">{t('productDesc4')}</p>
               </div>
             </div>
           </div>
