@@ -10,7 +10,7 @@ export const About: React.FC = () => {
   return (
     <section id="about" className="py-10">
       <h2 className="title">{t('navAbout')}</h2>
-      <div className="flex flex-col items-center justify-between gap-8 md:flex-row lg:gap-12">
+      <div className="flex flex-col items-center justify-between gap-8 lg:flex-row lg:gap-12">
         <div data-aos="zoom-in">
           <div className="relative lg:w-2/4">
             <img className="about-img about-img-overlay" src={about2} alt="About 2" />
@@ -18,7 +18,7 @@ export const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative lg:w-[55%]" data-aos="zoom-in">
+        <div className="relative lg:w-[55%] lg:mt-0 mt-5" data-aos="zoom-in">
           <div className="p-6 text-lg leading-relaxed text-center text-gray-600 border rounded-md simple-border-animation md:text-left">
             <p>{t('aboutInfo')}</p>
           </div>
