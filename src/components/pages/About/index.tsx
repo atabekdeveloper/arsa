@@ -1,24 +1,29 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import logo from 'src/assets/logo.png';
+import about1 from 'src/assets/about/about1.jpg';
+import about2 from 'src/assets/about/about2.jpg';
 
 export const About: React.FC = () => {
   const { t } = useTranslation();
+
   return (
-    <div id="about">
+    <section id="about" className="py-10">
       <h2 className="title">{t('navAbout')}</h2>
-      <div className="container relative flex items-center justify-center py-2 mx-auto md:py-16">
-        <div className="absolute inset-0 flex items-center justify-center opacity-30 -z-10">
-          <div className="flex items-center justify-center bg-gray-100 rounded-full w-80 h-80">
-            <img className="max-w-48" src={logo} alt="Logo" />
+      <div className="flex flex-col items-center gap-8 lg:flex-row lg:gap-12">
+        <div data-aos="zoom-in">
+          <div className="relative flex justify-center mx-auto lg:w-11/12">
+            <img className="about-img about-img-overlay" src={about2} alt="About 2" />
+            <img className="about-img" src={about1} alt="About 1" />
           </div>
         </div>
 
-        <div className="relative text-center">
-          <p className="text-base text-gray-700 md:text-lg">{t('aboutInfo')}</p>
+        <div className="relative lg:w-2/3" data-aos="zoom-in">
+          <div className="p-6 text-lg leading-relaxed text-center text-gray-600 simple-border-animation md:text-left">
+            <p>{t('aboutInfo')}</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

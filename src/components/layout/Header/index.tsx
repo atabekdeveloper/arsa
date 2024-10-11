@@ -3,6 +3,7 @@ import Select from 'react-tailwindcss-select';
 import { useTranslation } from 'react-i18next';
 
 import logo from 'src/assets/logo.png';
+import phone from 'src/assets/contact/telephone.png';
 
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,15 +35,23 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 transition-all duration-300 bg-white shadow-md">
       <div className="container flex items-center justify-between px-5 py-4 max-w-[1220px] m-auto">
         <a href="#">
-          <img className="max-w-12" src={logo} alt="Logo" />
+          <img
+            className="transition-transform duration-500 max-w-12 hover:scale-105"
+            src={logo}
+            alt="Logo"
+          />
         </a>
 
         <nav className="hidden space-x-4 md:flex lg:space-x-6">
           {navItems.map((item, i) => (
-            <a key={i} href={item.link} className="text-sm lg:text-base hover:text-primary">
+            <a
+              key={i}
+              href={item.link}
+              className="text-sm transition-colors duration-300 lg:text-base hover:text-primary"
+            >
               {item.title}
             </a>
           ))}
@@ -52,15 +61,17 @@ export const Header: React.FC = () => {
           <Select value={lang} onChange={handleChange} options={options} primaryColor="blue" />
           <a
             href="tel:+998901501350"
-            className="px-3 py-2 text-white rounded-md bg-primary hover:opacity-90 lg:px-4 lg:py-2"
+            className="p-2 text-white transition-all duration-300 rounded-full bg-primary hover:opacity-90"
           >
-            +998901501350
+            <img className="max-w-6" src={phone} alt="Phone" />
           </a>
 
           <div className="md:hidden">
             <button onClick={toggleMenu} className="ml-4 text-gray-500 focus:outline-none">
               <svg
-                className="w-6 h-6"
+                className={`w-6 h-6 transition-transform duration-300 ${
+                  isMenuOpen ? 'rotate-90' : 'rotate-0'
+                }`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -79,16 +90,16 @@ export const Header: React.FC = () => {
       </div>
 
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ${
+        className={`md:hidden overflow-hidden transition-max-height duration-500 ease-in-out ${
           isMenuOpen ? 'max-h-screen' : 'max-h-0'
         }`}
       >
-        <nav className="flex flex-col px-4 py-2 space-y-4">
+        <nav className="flex flex-col px-4 py-2 space-y-4 bg-white shadow-md">
           {navItems.map((item, i) => (
             <a
               key={i}
               href={item.link}
-              className="text-sm hover:text-primary"
+              className="text-sm transition-colors duration-300 hover:text-primary"
               onClick={() => setIsMenuOpen(false)}
             >
               {item.title}

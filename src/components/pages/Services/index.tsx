@@ -12,34 +12,22 @@ export const Services: React.FC = () => {
       <h2 className="title">{t('navServices')}</h2>
       <div className="container px-4 py-12 mx-auto">
         <div className="grid grid-cols-1 gap-8 text-center sm:grid-cols-2 md:grid-cols-3">
-          <div className="flex flex-col items-center gap-4">
-            <div className="flex items-center justify-center w-36 h-36 p-4 rounded-full bg-gradient-to-r from-primary to-[#EF4136]">
-              <div className="p-4 bg-white rounded-full">
-                <img src={delivery} alt="Delivery" />
-              </div>
-            </div>
+          <div className="flex flex-col items-center gap-4" data-aos="fade-right">
+            <img className="max-w-40" src={delivery} alt="Delivery" />
             <div>
               <h3 className="text-lg font-bold text-gray-700">{t('serviceTitle1')}</h3>
               <p>{t('serviceDesc1')}</p>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-4">
-            <div className="flex items-center justify-center w-36 h-36 p-4 rounded-full bg-gradient-to-r from-primary to-[#EF4136]">
-              <div className="p-4 bg-white rounded-full">
-                <img src={merchant} alt="Merchant" />
-              </div>
-            </div>
+          <div className="flex flex-col items-center gap-4" data-aos="fade-up">
+            <img className="max-w-40" src={merchant} alt="Merchant" />
             <div>
               <h3 className="text-lg font-bold text-gray-700">{t('serviceTitle2')}</h3>
               <p>{t('serviceDesc2')}</p>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-4">
-            <div className="flex items-center justify-center w-36 h-36 p-4 rounded-full bg-gradient-to-r from-primary to-[#EF4136]">
-              <div className="p-4 bg-white rounded-full">
-                <img src={tshirt} alt="Tshirt" />
-              </div>
-            </div>
+          <div className="flex flex-col items-center gap-4" data-aos="fade-left">
+            <img className="max-w-40" src={tshirt} alt="Tshirt" />
             <div>
               <h3 className="text-lg font-bold text-gray-700">{t('serviceTitle3')}</h3>
               <p>{t('serviceDesc3')}</p>

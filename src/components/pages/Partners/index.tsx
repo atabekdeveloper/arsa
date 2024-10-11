@@ -68,11 +68,18 @@ export const Partners: React.FC = () => {
   return (
     <div id="partners">
       <h2 className="title">{t('navPartners')}</h2>
-      <Slider {...settings} className="py-6">
+      <div className="block md:hidden">
+        <Slider {...settings} className="py-6">
+          {partners.map((partner, index) => (
+            <img key={index} className="max-w-[100px]" src={partner.src} alt={partner.alt} />
+          ))}
+        </Slider>
+      </div>
+      <div className="flex-wrap items-center justify-center hidden gap-8 mb-5 md:flex">
         {partners.map((partner, index) => (
           <img key={index} className="max-w-[100px]" src={partner.src} alt={partner.alt} />
         ))}
-      </Slider>
+      </div>
     </div>
   );
 };

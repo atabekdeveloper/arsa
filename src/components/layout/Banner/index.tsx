@@ -16,7 +16,7 @@ const banners = [
 
 export const Banner: React.FC = () => {
   const settings: Settings = {
-    dots: true,
+    dots: false,
     fade: true,
     infinite: true,
     speed: 500,
@@ -28,15 +28,17 @@ export const Banner: React.FC = () => {
   };
 
   return (
-    <Slider {...settings} className="mb-10 rounded-md">
-      {banners.map((banner, index) => (
-        <img
-          key={index}
-          className="max-w-full md:h-[500px] h-64 object-cover opacity-90 filter brightness-50"
-          src={banner.src}
-          alt={banner.alt}
-        />
-      ))}
-    </Slider>
+    <div data-aos="zoom-in">
+      <Slider {...settings} className="mb-10 overflow-hidden rounded-xl">
+        {banners.map((banner, index) => (
+          <img
+            key={index}
+            className="max-w-full md:h-[500px] h-64 object-cover opacity-90 filter brightness-50"
+            src={banner.src}
+            alt={banner.alt}
+          />
+        ))}
+      </Slider>
+    </div>
   );
 };

@@ -4,7 +4,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { Banner } from './Banner';
 
-import { About, Products, Partners, Contact, Services } from 'src/components/pages';
+import { About, Products, Partners, Services } from 'src/components/pages';
 
 export const Layout: React.FC = () => {
   return (
@@ -16,7 +16,6 @@ export const Layout: React.FC = () => {
         <Services />
         <Products />
         <Partners />
-        <Contact />
       </main>
       <Footer />
     </div>
