@@ -9,8 +9,8 @@ i18n.use(initReactI18next).init({
     EN,
     UZ,
   },
-  lng: 'UZ',
-  fallbackLng: 'UZ',
+  lng: 'RU',
+  fallbackLng: 'RU',
   react: { useSuspense: true },
   interpolation: { escapeValue: false },
 });
