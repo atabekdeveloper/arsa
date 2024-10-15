@@ -5,17 +5,20 @@ import { useTranslation } from 'react-i18next';
 import logo from 'src/assets/logo.png';
 import phone from 'src/assets/contact/telephone.png';
 
+const options = [
+  { value: 'uz', label: 'UZ' },
+  { value: 'en', label: 'EN' },
+  { value: 'ru', label: 'RU' },
+];
+
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [lang, setLang] = useState({ value: 'uz', label: 'UZ' });
+  const langStorage = localStorage.getItem('lang');
+  const [lang, setLang] = useState<any>(
+    langStorage ? options.find((option) => option.label === langStorage) : options[0],
+  );
 
   const { t, i18n } = useTranslation();
-
-  const options = [
-    { value: 'uz', label: 'UZ' },
-    { value: 'en', label: 'EN' },
-    { value: 'ru', label: 'RU' },
-  ];
 
   const navItems = [
     { title: t('navAbout'), link: '#about' },
@@ -27,6 +30,7 @@ export const Header: React.FC = () => {
 
   const handleChange = (value: any) => {
     i18n.changeLanguage(value.label);
+    localStorage.setItem('lang', value.label);
     setLang(value);
   };
 

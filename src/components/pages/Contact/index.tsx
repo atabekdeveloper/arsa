@@ -28,7 +28,7 @@ export const Contact: React.FC = () => {
               <img className="max-w-6" src={clock} alt="Clock" />
               <div>
                 <p className="text-base font-bold">{t('time')}</p>
-                <p>Dushanba-Shanba, 9:00 - 18:00</p>
+                <p>{t('workTime')}, 9:00 - 18:00</p>
               </div>
             </div>
 

@@ -29,6 +29,7 @@ export const UZ = {
     productDesc4:
       "Professional va uyda foydalanish uchun mo'ljallangan kuchli va ko'p qirrali batareyali asboblar. Yuqori ishlash va uzoq ish vaqtini ta'minlang.",
     time: 'ISH VAQTLARI:',
+    workTime: 'Dushanba-Shanba',
     country: "O'ZBEKISTON",
     city: "Farg'ona Qoqon, Baraka savdo majmuasi",
   },

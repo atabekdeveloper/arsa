@@ -29,6 +29,7 @@ export const EN = {
     productDesc4:
       'Powerful and versatile battery-powered tools for professional and home use. Provide high performance and long operating time.',
     time: 'WORKING HOURS:',
+    workTime: 'Monday-Saturday',
     country: 'UZBEKISTAN',
     city: 'Fergana Qoqan, Baraka shopping complex',
   },
