@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 
-import p1 from 'src/assets/partners/1.png';
+import p1 from 'src/assets/partners/1.svg';
 import p2 from 'src/assets/partners/2.png';
 import p3 from 'src/assets/partners/3.png';
 import p4 from 'src/assets/partners/4.png';
@@ -22,9 +22,9 @@ const partners = [
   { src: p5, alt: 'AVTOYNA' },
   { src: p6, alt: 'AUTOPODBOR' },
   { src: p7, alt: 'Prime Auto LTD' },
-  { src: p8, alt: 'CAR Wings' },
+  // { src: p8, alt: 'CAR Wings' },
   { src: p9, alt: 'HANGLASS' },
-  { src: p10, alt: 'ASL PROF' },
+  // { src: p10, alt: 'ASL PROF' },
 ];
 
 export const Partners: React.FC = () => {
@@ -32,12 +32,17 @@ export const Partners: React.FC = () => {
   return (
     <div id="partners">
       <h2 className="title">{t('navPartners')}</h2>
-      <div className="hidden grid-cols-7 gap-5 py-4 md:grid">
+      <div className="flex flex-wrap items-center justify-center gap-16 mb-20 -mt-5 md:justify-around">
         {partners.map((partner, index) => (
-          <img key={index} className="max-w-[100px]" src={partner.src} alt={partner.alt} />
+          <img
+            key={index}
+            className="max-w-[200px] object-contain"
+            src={partner.src}
+            alt={partner.alt}
+          />
         ))}
       </div>
-      <Swiper
+      {/* <Swiper
         className="block py-4 mySwiper md:hidden"
         rewind
         modules={[Autoplay]}
@@ -53,7 +58,7 @@ export const Partners: React.FC = () => {
             <img key={index} className="max-w-[100px]" src={partner.src} alt={partner.alt} />
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
     </div>
   );
 };
