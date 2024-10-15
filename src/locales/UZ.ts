@@ -7,12 +7,15 @@ export const UZ = {
     navContact: 'Aloqa',
     aboutInfo:
       "ARSA Chemicals Qo'qon 2016 yil Qo'qonda tashkil topgan. Yoqori sifatli tez qotuvchan Germanya xomashyosi va formulasi asosida qadoqlangan ishonchli bo’lib, Brand uzoq yillar davomida o'z sifat va mijozlariga ega mahsulot hisoblanadi. Sifat darajasi injenerlarimiz tomonida nazorat qilinib sovuq qishki va issiq yozgi faslarga qarab xomashyo formulasi ishlab chiqiladi, bu esa o'z vaqtida mahsulotning sifatini nazorat qilishga yordam beradi.",
-    serviceTitle1: 'Shahar ichida yetkazib berish',
-    serviceDesc1: "Qo'qon shaxri ichida yetkazib berish",
-    serviceTitle2: "Do'kon uskunalari",
-    serviceDesc2: "Do'kon peshtaxtalarini o'rnatib berish",
-    serviceTitle3: 'Moslashtirilgan futbolkalar',
-    serviceDesc3: 'Hamkorlar uchun maxsus dizaynli futbolkalar',
+    serviceTitle1: 'ARSA yuk mashinasi',
+    serviceDesc1:
+      "ARSA’ning o‘ziga xos yuk tashuvchi furgoni yirik buyurtmalarni tashish uchun mo‘ljallangan bo‘lib, yuqori darajadagi xizmat ko‘rsatish va brendning global ta’sirchanligini namoyish etadi. Avtomobil dizayni yorqin logotipi va zamonaviy dizayni bilan e'tiborni tortadi.",
+    serviceTitle2: 'ARSA markali stend',
+    serviceDesc2:
+      "Mahsulotlar bilan to'ldirishga tayyor bo'lgan bo'sh ARSA brendi stendi. Bu do'konlar va ko'rgazma zallari uchun ideal bo'lib, brendning taqdimot qobiliyati va professionalligini ta'kidlaydi.",
+    serviceTitle3: 'ARSA markali futbolka',
+    serviceDesc3:
+      "ARSA logotipi va “Siz yaxshiroqsini topa olmaysiz” shiori tushirilgan futbolka ko'rsatilgan. Bu kompaniya uchun ajoyib mahsulot bo'lib, mahsulotga ishonch va uning noyob sifatini ta'kidlab, jamoa va mijozlar uchun timsol bo'lib xizmat qiladi.",
     productTitle1: 'ARSA mastiklari va yopishtiruvchi moddalari',
     productDesc1:
       "Qurilish va ta'mirlash uchun yuqori sifatli mastiklar. Har xil turdagi yuzalar va iqlim sharoitlari uchun javob beradi. O‘zbekiston, Tojikiston va Ozarbayjon bozorlarida mavjud.",

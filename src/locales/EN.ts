@@ -7,12 +7,15 @@ export const EN = {
     navContact: 'Contact',
     aboutInfo:
       'ARSA Chemicals Kokon was founded in 2016 in Kokon. Reliable packaging based on high-quality fast-setting Germania raw materials and formula, the Brand has been a product of its quality and customers for many years. The quality level is controlled by our engineers, and the raw material formula is developed depending on the cold winter and hot summer seasons, which helps to control the quality of the product in time.',
-    serviceTitle1: 'Delivery within the city',
-    serviceDesc1: 'Delivery within the city of Kokan',
-    serviceTitle2: 'Shop Equipment',
-    serviceDesc2: 'Installation of shop counters',
-    serviceTitle3: 'Custom Design T-Shirts',
-    serviceDesc3: 'T-shirts with special designs for partners',
+    serviceTitle1: 'ARSA truck',
+    serviceDesc1:
+      "The ARSA branded cargo van is designed to transport large-sized orders, demonstrating a high level of service and the brand's global reach. The design of the vehicle attracts attention with its bright logo and modern design.",
+    serviceTitle2: 'ARSA branded stand',
+    serviceDesc2:
+      'An empty display stand of the ARSA brand, ready to be filled with products. It is ideal for stores and showrooms, emphasizing the presentability and professionalism of the brand.',
+    serviceTitle3: 'ARSA branded t-shirt',
+    serviceDesc3:
+      "The image shows a T-shirt with the ARSA logo and the slogan 'You can't find better one'. This is a great piece of company merch that emphasizes the confidence in the products and their unique quality, which serve as a symbol for the team and customers.",
     productTitle1: 'Sealants and adhesives ARSA',
     productDesc1:
       'High-quality sealants for construction and repair. Suitable for various types of surfaces and climatic conditions. Available in the markets of Uzbekistan, Tajikistan and Azerbaijan.',
