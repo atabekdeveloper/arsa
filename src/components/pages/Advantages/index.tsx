@@ -60,7 +60,7 @@ export const Advantages: React.FC = () => {
             ))}
           </div>
 
-          <div className="flex justify-center h-[500px]" data-aos="zoom-in">
+          <div className="flex justify-center h-[700px]" data-aos="zoom-in">
             <img className="object-cover rounded-lg shadow-md" src={advantages} alt="Advantages" />
           </div>
 

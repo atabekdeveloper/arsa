@@ -50,5 +50,8 @@ export const UZ = {
     advantageTitle6: 'DOIMIY RIVOJLANISH',
     advantageDesc6:
       'Eng yaxshi yechimlarni taqdim etish uchun doimiy ravishda rivojlanib va ​​takomillashib boring.',
+    experience: 'Tajriba',
+    assortments: 'Assartimentlar',
+    customers: 'Mijozlar',
   },
 };

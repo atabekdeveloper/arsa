@@ -4,3 +4,4 @@ export * from './Partners';
 export * from './Contact';
 export * from './Services';
 export * from './Advantages';
+export * from './Experience';

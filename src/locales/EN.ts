@@ -47,5 +47,8 @@ export const EN = {
     advantageDesc5: 'Flexible and customizable services tailored to meet your specific needs.',
     advantageTitle6: 'CONTINUOUS DEVELOPMENT',
     advantageDesc6: 'Constantly evolving and improving to deliver the best solutions.',
+    experience: 'Experience',
+    assortments: 'Assortments',
+    customers: 'Customers',
   },
 };

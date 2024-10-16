@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Select from 'react-tailwindcss-select';
 import { useTranslation } from 'react-i18next';
+import { LuPhone } from 'react-icons/lu';
 
 import logo from 'src/assets/logo.png';
 import phone from 'src/assets/contact/telephone.png';
@@ -67,7 +68,7 @@ export const Header: React.FC = () => {
             href="tel:+998901501350"
             className="p-2 text-white transition-all duration-300 rounded-full bg-primary hover:opacity-90"
           >
-            <img className="max-w-6" src={phone} alt="Phone" />
+            <LuPhone size={24} />
           </a>
 
           <div className="md:hidden">

@@ -4,7 +4,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { Banner } from './Banner';
 
-import { About, Products, Partners, Services, Advantages } from 'src/components/pages';
+import { About, Products, Partners, Services, Advantages, Experience } from 'src/components/pages';
 
 export const Layout: React.FC = () => {
   return (
@@ -13,6 +13,7 @@ export const Layout: React.FC = () => {
       <main className="max-w-[1220px] m-auto px-5 mt-5">
         <Banner />
         <About />
+        <Experience />
         <Advantages />
         <Services />
         <Products />
