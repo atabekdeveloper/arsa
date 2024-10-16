@@ -39,9 +39,9 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 transition-all duration-300 bg-white shadow-md">
+    <header className="sticky top-0 z-50 w-full transition-all duration-300 bg-white shadow-md">
       <div className="container flex items-center justify-between px-5 py-4 max-w-[1220px] m-auto">
-        <a href="#">
+        <a href="">
           <img
             className="transition-transform duration-500 max-w-12 hover:scale-105"
             src={logo}

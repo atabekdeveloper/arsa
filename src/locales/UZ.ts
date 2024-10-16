@@ -32,5 +32,23 @@ export const UZ = {
     workTime: 'Dushanba-Shanba',
     country: "O'ZBEKISTON",
     city: "Farg'ona Qoqon, Baraka savdo majmuasi",
+    advantages: 'Bizning afzalliklarimiz',
+    advantageTitle1: 'HORIJ XOMASHYOSI',
+    advantageDesc1:
+      "Xorijiy xom ashyo mahsulot sifatini yaxshilaydi, assortimentni kengaytiradi va ta'minotni barqarorlashtiradi, innovatsiyalarni rag'batlantiradi.",
+    advantageTitle2: 'YUQORI TAJRIBA',
+    advantageDesc2: "Sifat va qoniqishga e'tibor qaratgan misli ko'rilmagan xizmat.",
+    advantageTitle3: 'GERMANIYA SIFATI',
+    advantageDesc3:
+      'Germaniya muhandislik standartlariga rioya qilgan holda, aniqlik va mukammallik bilan yaratilgan.',
+    advantageTitle4: 'MALAKALI ISHCHILAR',
+    advantageDesc4:
+      "Yuqori malakali mutaxassislar har bir vazifada yuqori darajadagi ishlashni ta'minlaydi.",
+    advantageTitle5: 'MOSLASHUVCHAN FORMULA',
+    advantageDesc5:
+      'Sizning maxsus ehtiyojlaringizni qondirish uchun moslashtirilgan moslashuvchan va moslashtirilgan xizmatlar.',
+    advantageTitle6: 'DOIMIY RIVOJLANISH',
+    advantageDesc6:
+      'Eng yaxshi yechimlarni taqdim etish uchun doimiy ravishda rivojlanib va ​​takomillashib boring.',
   },
 };
