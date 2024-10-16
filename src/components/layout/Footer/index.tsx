@@ -1,7 +1,7 @@
 import React from 'react';
+import { FaInstagram } from 'react-icons/fa';
+import { PiTelegramLogo } from 'react-icons/pi';
 
-import instagram from 'src/assets/contact/instagram.png';
-import telegram from 'src/assets/contact/telegram.png';
 import { Contact } from 'src/components/pages';
 
 export const Footer: React.FC = () => {
@@ -18,11 +18,19 @@ export const Footer: React.FC = () => {
           </p>
           <div className="flex flex-col items-center gap-3">
             <div className="flex gap-2">
-              <a href="https://t.me/ARSAkokand" target="_blank">
-                <img className="max-w-7" src={telegram} alt="Telegram" />
+              <a
+                className="p-1 bg-white rounded-full"
+                href="https://t.me/ARSAkokand"
+                target="_blank"
+              >
+                <PiTelegramLogo size={24} color="#1b75bc" />
               </a>
-              <a href="https://www.instagram.com/arsakokand/" target="_blank">
-                <img className="max-w-7" src={instagram} alt="Instagram" />
+              <a
+                className="p-1 bg-white rounded-full"
+                href="https://www.instagram.com/arsakokand/"
+                target="_blank"
+              >
+                <FaInstagram size={24} color="#1b75bc" />
               </a>
             </div>
           </div>

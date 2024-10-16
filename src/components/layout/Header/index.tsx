@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { LuPhone } from 'react-icons/lu';
 
 import logo from 'src/assets/logo.png';
-import phone from 'src/assets/contact/telephone.png';
 
 const options = [
   { value: 'uz', label: 'UZ' },

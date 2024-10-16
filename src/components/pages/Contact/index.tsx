@@ -1,10 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-
-import clock from 'src/assets/contact/clock.png';
-import telephone from 'src/assets/contact/telephone.png';
-import mail from 'src/assets/contact/mail.png';
-import location from 'src/assets/contact/location.png';
+import { IoMdTime } from 'react-icons/io';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
+import { FiPhone } from 'react-icons/fi';
+import { IoMailOutline } from 'react-icons/io5';
 
 export const Contact: React.FC = () => {
   const { t } = useTranslation();
@@ -25,7 +24,7 @@ export const Contact: React.FC = () => {
           <h2 className="mb-6 text-2xl font-bold text-white">{t('navContact')}</h2>
           <div className="space-y-4">
             <div className="flex items-center gap-4">
-              <img className="max-w-6" src={clock} alt="Clock" />
+              <IoMdTime size={30} />
               <div>
                 <p className="text-base font-bold">{t('time')}</p>
                 <p>{t('workTime')}, 9:00 - 18:00</p>
@@ -33,7 +32,7 @@ export const Contact: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <img className="max-w-6" src={location} alt="Location" />
+              <HiOutlineLocationMarker size={30} />
               <div>
                 <p className="text-base font-bold">{t('country')}</p>
                 <p>{t('city')}</p>
@@ -41,7 +40,7 @@ export const Contact: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <img className="max-w-6" src={telephone} alt="Telephone" />
+              <FiPhone size={30} />
               <div className="flex flex-col">
                 <a href="tel:+998901501350">+998 90 150 13 50</a>
                 <a href="tel:+998911500040">+998 91 150 00 40</a>
@@ -49,7 +48,7 @@ export const Contact: React.FC = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <img className="max-w-6" src={mail} alt="Mail" />
+              <IoMailOutline size={30} />
               <a href="mailto:akmalxon91@mail.ru">akmalxon91@mail.ru</a>
             </div>
           </div>
