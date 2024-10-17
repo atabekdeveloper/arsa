@@ -16,10 +16,6 @@ body {
     @apply md:max-w-[450px] max-w-80 h-auto rounded-lg shadow-lg transition duration-500 transform;
   }
 
-  .about-img:hover {
-    @apply scale-105;
-  }
-
   .about-img-overlay {
     @apply absolute top-8 left-8;
   }
