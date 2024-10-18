@@ -1,14 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import about1 from 'src/assets/about/about1.jpg';
-import about2 from 'src/assets/about/about2.jpg';
+import about1 from 'src/assets/images/about/about1.jpg';
+import about2 from 'src/assets/images/about/about2.jpg';
 
 export const About: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="py-10">
+    <section id="about" className="container">
       <h2 className="title">{t('navAbout')}</h2>
       <div className="flex flex-col items-center justify-between gap-8 pt-4 lg:flex-row lg:gap-12">
         <div data-aos="zoom-in">

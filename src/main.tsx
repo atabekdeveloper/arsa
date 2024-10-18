@@ -13,6 +13,7 @@ import 'swiper/css/navigation';
 
 import 'aos/dist/aos.css';
 
+import 'src/assets/styles/swiper.css';
 import './index.css';
 
 import './i18next';

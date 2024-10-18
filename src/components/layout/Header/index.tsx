@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import Select from 'react-tailwindcss-select';
+import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { LuPhone } from 'react-icons/lu';
+import { GrLanguage } from 'react-icons/gr';
+import { TbMenuDeep, TbX } from 'react-icons/tb'; // Добавляем иконку для закрытия меню
 
-import logo from 'src/assets/logo.png';
+import logo from 'src/assets/images/logo_white.png';
 
 const options = [
   { value: 'uz', label: 'UZ' },
@@ -12,8 +12,13 @@ const options = [
 ];
 
 export const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const langStorage = localStorage.getItem('lang');
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [lang, setLang] = useState<any>(
     langStorage ? options.find((option) => option.label === langStorage) : options[0],
   );
@@ -32,18 +37,58 @@ export const Header: React.FC = () => {
     i18n.changeLanguage(value.label);
     localStorage.setItem('lang', value.label);
     setLang(value);
+    setIsDropdownOpen(false); // Закрыть dropdown после выбора языка
   };
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
   };
 
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
+
+  const handleScroll = () => {
+    if (window.scrollY > 150) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node) &&
+      !buttonRef.current?.contains(event.target as Node)
+    )
+      setIsDropdownOpen(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 w-full transition-all duration-300 bg-white shadow-md">
-      <div className="container flex items-center justify-between px-5 py-4 max-w-[1220px] m-auto">
-        <a href="">
+    <header
+      className={`fixed top-0 z-50 w-full transition-all duration-700 ${scrolled && 'bg-primary'}`}
+    >
+      <div
+        className={`container flex items-center justify-between py-10 transition-all duration-500 ${
+          scrolled && 'py-2'
+        }`}
+      >
+        <a href="#">
           <img
-            className="transition-transform duration-500 max-w-12 hover:scale-105"
+            className="transition-transform duration-500 max-w-14 hover:scale-105"
             src={logo}
             alt="Logo"
           />
@@ -54,62 +99,77 @@ export const Header: React.FC = () => {
             <a
               key={i}
               href={item.link}
-              className="text-sm transition-colors duration-300 lg:text-base hover:text-primary"
+              className="px-2 py-1 text-sm font-medium text-white transition-colors duration-300 rounded-sm hover:bg-[#F2F2F2] hover:text-black"
             >
               {item.title}
             </a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-2 lg:gap-4">
-          <Select value={lang} onChange={handleChange} options={options} primaryColor="blue" />
-          <a
-            href="tel:+998901501350"
-            className="p-2 text-white transition-all duration-300 rounded-full bg-primary hover:opacity-90"
+        <div className="relative flex items-center gap-2 lg:gap-4">
+          {/* Кнопка и выпадающий список выбора языка */}
+          <button
+            ref={buttonRef}
+            className="flex items-center gap-2 text-white cursor-pointer"
+            onClick={toggleDropdown}
           >
-            <LuPhone size={24} />
-          </a>
+            <GrLanguage size={24} />
+            <span className="text-white">{lang.label}</span>
+          </button>
+
+          {/* Выпадающий список */}
+          {isDropdownOpen && (
+            <div
+              ref={dropdownRef}
+              className="absolute right-0 w-24 py-2 mt-2 transition-all duration-300 bg-white rounded shadow-lg top-7"
+            >
+              {options.map((option) => (
+                <div
+                  key={option.value}
+                  className={`px-4 py-2 cursor-pointer hover:bg-gray-200 ${
+                    lang.value === option.value ? 'font-bold' : ''
+                  }`}
+                  onClick={() => handleChange(option)}
+                >
+                  {option.label}
+                </div>
+              ))}
+            </div>
+          )}
 
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="ml-4 text-gray-500 focus:outline-none">
-              <svg
-                className={`w-6 h-6 transition-transform duration-300 ${
-                  isMenuOpen ? 'rotate-90' : 'rotate-0'
-                }`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16m-7 6h7"
-                />
-              </svg>
+            <button onClick={toggleMenu} className="ml-4 text-white">
+              <TbMenuDeep size={24} />
             </button>
           </div>
         </div>
       </div>
 
+      {/* Полноэкранное мобильное меню */}
       <div
-        className={`md:hidden overflow-hidden transition-max-height duration-500 ease-in-out ${
-          isMenuOpen ? 'max-h-screen' : 'max-h-0'
+        className={`fixed inset-0 bg-black bg-opacity-90 z-40 flex items-center justify-center transition-opacity duration-700 ease-in-out ${
+          isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
-        <nav className="flex flex-col px-4 py-2 space-y-4 bg-white shadow-md">
+        <nav className="flex flex-col items-center space-y-6 text-2xl text-white">
           {navItems.map((item, i) => (
             <a
               key={i}
               href={item.link}
-              className="text-sm transition-colors duration-300 hover:text-primary"
+              className="transition-colors duration-300 hover:text-gray-400"
               onClick={() => setIsMenuOpen(false)}
             >
               {item.title}
             </a>
           ))}
         </nav>
+
+        <button
+          onClick={toggleMenu}
+          className="absolute text-white top-4 right-4 focus:outline-none"
+        >
+          <TbX size={32} /> {/* Кнопка для закрытия меню */}
+        </button>
       </div>
     </header>
   );

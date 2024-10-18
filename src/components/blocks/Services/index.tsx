@@ -4,9 +4,9 @@ import { EffectCards, Pagination, Autoplay } from 'swiper/modules';
 import { PaginationOptions } from 'swiper/types';
 import { useTranslation } from 'react-i18next';
 
-import s1 from 'src/assets/services/1.jpg';
-import s2 from 'src/assets/services/2.jpg';
-import s3 from 'src/assets/services/3.jpg';
+import s1 from 'src/assets/images/services/1.jpg';
+import s2 from 'src/assets/images/services/2.jpg';
+import s3 from 'src/assets/images/services/3.jpg';
 
 export const Services: React.FC = () => {
   const [activeIndex, setActiveIndex] = React.useState(0);
@@ -25,7 +25,7 @@ export const Services: React.FC = () => {
     },
   };
   return (
-    <div id="services">
+    <section id="services" className="container">
       <h2 className="title">{t('navServices')}</h2>
       <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2" data-aos="fade-right">
         <div className="relative flex items-center">
@@ -60,6 +60,6 @@ export const Services: React.FC = () => {
           </Swiper>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

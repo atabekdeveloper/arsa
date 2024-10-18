@@ -1,13 +1,13 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import advantages from 'src/assets/advantages/advantages.webp';
-import icon1 from 'src/assets/advantages/icon1.png';
-import icon2 from 'src/assets/advantages/icon2.png';
-import icon3 from 'src/assets/advantages/icon3.png';
-import icon4 from 'src/assets/advantages/icon4.png';
-import icon5 from 'src/assets/advantages/icon5.png';
-import icon6 from 'src/assets/advantages/icon6.png';
+import advantages from 'src/assets/images/advantages/advantages.png';
+import icon1 from 'src/assets/images/advantages/icon1.png';
+import icon2 from 'src/assets/images/advantages/icon2.png';
+import icon3 from 'src/assets/images/advantages/icon3.png';
+import icon4 from 'src/assets/images/advantages/icon4.png';
+import icon5 from 'src/assets/images/advantages/icon5.png';
+import icon6 from 'src/assets/images/advantages/icon6.png';
 
 export const Advantages: React.FC = () => {
   const { t } = useTranslation();
@@ -44,7 +44,7 @@ export const Advantages: React.FC = () => {
     },
   ];
   return (
-    <div className="pt-10">
+    <section className="container">
       <h2 className="title">{t('advantages')}</h2>
       <div className="max-w-full py-8 mx-auto">
         <div className="grid items-center grid-cols-1 gap-8 md:grid-cols-3">
@@ -77,6 +77,6 @@ export const Advantages: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

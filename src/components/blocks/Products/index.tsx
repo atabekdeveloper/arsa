@@ -1,15 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import p1 from 'src/assets/products/1.png';
-import p2 from 'src/assets/products/2.png';
-import p3 from 'src/assets/products/3.png';
-import p4 from 'src/assets/products/4.png';
+import p1 from 'src/assets/images/products/1.png';
+import p2 from 'src/assets/images/products/2.png';
+import p3 from 'src/assets/images/products/3.png';
+import p4 from 'src/assets/images/products/4.png';
 
 export const Products: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <div id="products">
+    <section id="products" className="container">
       <h2 className="title">{t('navProducts')}</h2>
       <div className="container py-8 mx-auto">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -76,6 +76,6 @@ export const Products: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
