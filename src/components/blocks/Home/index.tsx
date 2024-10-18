@@ -2,7 +2,6 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 
-import b1 from 'src/assets/images/banner/1.webp';
 import b2 from 'src/assets/images/banner/2.webp';
 import b3 from 'src/assets/images/banner/3.webp';
 import b4 from 'src/assets/images/banner/4.webp';
