@@ -81,7 +81,7 @@ export const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 z-50 w-full transition-all duration-700 ${
-        scrolled ? 'bg-gray-900' : 'bg-white/10 backdrop-blur-lg shadow-lg'
+        scrolled ? 'bg-gray-800' : 'bg-white/10 backdrop-blur-lg shadow-lg'
       }`}
     >
       <div
