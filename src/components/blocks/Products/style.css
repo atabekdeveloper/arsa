@@ -1,0 +1,23 @@
+/* Описание скрыто и начинает двигаться вверх при наведении */
+.about-description {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.4s ease-out, max-height 0.4s ease-out;
+}
+
+/* При наведении показываем описание */
+.about-relative:hover .about-description {
+  opacity: 1;
+  max-height: 100px; /* или столько, сколько нужно для полного текста */
+}
+
+/* При наведении немного поднимаем весь текст */
+.about-relative:hover .text-container {
+  transform: translateY(-10px); /* Поднимаем заголовок и описание */
+}
+
+/* Плавная тень при наведении */
+.about-relative:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
