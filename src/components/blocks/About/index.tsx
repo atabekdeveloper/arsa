@@ -7,7 +7,6 @@ import about2 from 'src/assets/images/about/about2.jpg';
 
 export const About: React.FC = () => {
   const { t } = useTranslation();
-
   return (
     <section id="about" className="container">
       <h2 className="title">{t('navAbout')}</h2>
