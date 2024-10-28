@@ -35,7 +35,7 @@ export const Experience: React.FC = () => {
             <IoPeopleOutline />
           </div>
           <h2 className="text-5xl font-bold text-gray-800">
-            <CountUp isCounting={inView} start={9} end={30} />+
+            <CountUp isCounting={inView} start={9} end={100} />+
           </h2>
           <p className="mt-2 text-xl text-gray-600">{t('customers')}</p>
         </div>

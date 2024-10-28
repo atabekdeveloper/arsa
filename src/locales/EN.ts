@@ -6,9 +6,9 @@ export const EN = {
     navServices: 'Services',
     navContact: 'Contact',
     aboutInfo:
-      'ARSA Chemicals Kokon was founded in 2016 in Kokon. Reliable packaging based on high-quality fast-setting Germania raw materials and formula, the Brand has been a product of its quality and customers for many years. The quality level is controlled by our engineers, and the raw material formula is developed depending on the cold winter and hot summer seasons, which helps to control the quality of the product in time.',
+      'ARSA Chemicals Kokand was founded in 2016 in Kokand. Reliable packaging based on high-quality fast-setting Germania raw materials and formula, the Brand has been a product of its quality and customers for many years. The quality level is controlled by our engineers, and the raw material formula is developed depending on the cold winter and hot summer seasons, which helps to control the quality of the product in time.',
     aboutInfoMini:
-      'Since 2016, ARSA Chemicals Kokon has been producing high-quality products using German raw materials, adapting formulas to seasonal conditions for reliability and durability.',
+      'Since 2016, ARSA Chemicals Kokand has been producing high-quality products using German raw materials, adapting formulas to seasonal conditions for reliability and durability.',
     serviceTitle1: 'ARSA truck',
     serviceDesc1:
       "The ARSA branded cargo van is designed to transport large-sized orders, demonstrating a high level of service and the brand's global reach. The design of the vehicle attracts attention with its bright logo and modern design.",

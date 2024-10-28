@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { GrLanguage } from 'react-icons/gr';
 import { TbMenuDeep, TbX } from 'react-icons/tb'; // Добавляем иконку для закрытия меню
 
-import logo from 'src/assets/images/logo_white.png';
+import logo from 'src/assets/images/logo.png';
 
 const options = [
   { value: 'uz', label: 'UZ' },
