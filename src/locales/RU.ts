@@ -53,5 +53,7 @@ export const RU = {
     experience: 'Опыт',
     assortments: 'Ассортименты',
     customers: 'Клиенты',
+    mapTitle: 'Наша компания',
+    mapDesc: 'Охватывает всю территорию Узбекистана',
   },
 };

@@ -55,5 +55,7 @@ export const UZ = {
     experience: 'Tajriba',
     assortments: 'Assartimentlar',
     customers: 'Mijozlar',
+    mapTitle: 'Bizning korxona',
+    mapDesc: "O'zbekistonning barcha hududini qamrab olgan",
   },
 };
