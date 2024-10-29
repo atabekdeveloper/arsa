@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import b1 from 'src/assets/images/banner/1.webp';
 import b2 from 'src/assets/images/banner/2.webp';
@@ -30,11 +29,10 @@ export const Banner: React.FC = () => {
         {banners.map((banner, index) => (
           <SwiperSlide key={index}>
             <div className="relative h-screen">
-              <LazyLoadImage
+              <img
                 className="object-cover w-full h-screen brightness-50"
                 src={banner}
                 alt={`Slide ${index}`}
-                loading="lazy"
               />
               <div
                 className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white"

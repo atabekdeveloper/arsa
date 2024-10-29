@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import p1 from 'src/assets/images/products/1.png';
 import p2 from 'src/assets/images/products/2.png';
@@ -21,7 +20,7 @@ export const Products: React.FC = () => {
             className="overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-md about-relative hover:shadow-xl"
             data-aos="fade-right"
           >
-            <LazyLoadImage src={p1} alt={t('productTitle1')} className="object-cover w-full h-64" />
+            <img src={p1} alt={t('productTitle1')} className="object-cover w-full h-64" />
 
             <div className="absolute inset-0 flex items-end transition-opacity duration-300 bg-gradient-to-t from-primary to-transparent">
               <div className="p-6 transition-transform transform translate-y-0">
@@ -36,7 +35,7 @@ export const Products: React.FC = () => {
             className="overflow-hidden transition-shadow duration-300 bg-white rounded-lg shadow-md about-relative hover:shadow-xl"
             data-aos="fade-left"
           >
-            <LazyLoadImage src={p2} alt={t('productTitle2')} className="object-cover w-full h-64" />
+            <img src={p2} alt={t('productTitle2')} className="object-cover w-full h-64" />
 
             <div className="absolute inset-0 flex items-end transition-opacity duration-300 bg-gradient-to-t from-primary to-transparent">
               <div className="p-6 transition-transform transform translate-y-0">
@@ -52,7 +51,7 @@ export const Products: React.FC = () => {
             data-aos="fade-right"
             data-aos-delay="90"
           >
-            <LazyLoadImage src={p3} alt={t('productTitle3')} className="object-cover w-full h-64" />
+            <img src={p3} alt={t('productTitle3')} className="object-cover w-full h-64" />
 
             <div className="absolute inset-0 flex items-end transition-opacity duration-300 bg-gradient-to-t from-primary to-transparent">
               <div className="p-6 transition-transform transform translate-y-0">
@@ -68,7 +67,7 @@ export const Products: React.FC = () => {
             data-aos="fade-left"
             data-aos-delay="90"
           >
-            <LazyLoadImage src={p4} alt={t('productTitle4')} className="object-cover w-full h-64" />
+            <img src={p4} alt={t('productTitle4')} className="object-cover w-full h-64" />
 
             <div className="absolute inset-0 flex items-end transition-opacity duration-300 bg-gradient-to-t from-primary to-transparent">
               <div className="p-6 transition-transform transform translate-y-0">

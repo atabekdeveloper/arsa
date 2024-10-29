@@ -53,6 +53,6 @@ export const EN = {
     assortments: 'Assortments',
     customers: 'Customers',
     mapTitle: 'Our company',
-    mapDesc: 'It covers the entire territory of Uzbekistan',
+    mapDesc: 'Our company cover the entire territory of Uzbekistan',
   },
 };

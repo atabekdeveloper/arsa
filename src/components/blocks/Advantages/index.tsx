@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import advantages from 'src/assets/images/advantages/advantages.png';
 import icon1 from 'src/assets/images/advantages/icon1.png';
@@ -54,7 +53,7 @@ export const Advantages: React.FC = () => {
             {features.slice(0, 3).map((feature, index) => (
               <div key={index} className="p-6 text-center bg-white rounded-lg shadow-md">
                 <div className="flex justify-center mb-4">
-                  <LazyLoadImage className="max-w-20" src={feature.icon} alt={feature.title} />
+                  <img className="max-w-20" src={feature.icon} alt={feature.title} />
                 </div>
                 <h3 className="mb-2 text-xl font-bold">{feature.title}</h3>
                 <p className="text-gray-500 line-clamp-3">{feature.description}</p>
@@ -67,7 +66,7 @@ export const Advantages: React.FC = () => {
             className="flex justify-center h-[400px] md:h-[700px] order-last md:order-2"
             data-aos="zoom-in"
           >
-            <LazyLoadImage
+            <img
               className="object-cover w-full rounded-lg shadow-md"
               src={advantages}
               alt="Advantages"
@@ -79,7 +78,7 @@ export const Advantages: React.FC = () => {
             {features.slice(3).map((feature, index) => (
               <div key={index} className="p-6 text-center bg-white rounded-lg shadow-md">
                 <div className="flex justify-center mb-4">
-                  <LazyLoadImage className="max-w-20" src={feature.icon} alt={feature.title} />
+                  <img className="max-w-20" src={feature.icon} alt={feature.title} />
                 </div>
                 <h3 className="mb-2 text-xl font-bold">{feature.title}</h3>
                 <p className="text-gray-500 line-clamp-3">{feature.description}</p>
