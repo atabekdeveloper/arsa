@@ -5,3 +5,4 @@ export * from './Partners';
 export * from './Services';
 export * from './Advantages';
 export * from './Experience';
+export * from './Map';

@@ -10,7 +10,7 @@ export const Experience: React.FC = () => {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.5 });
   const { t } = useTranslation();
   return (
-    <section className="container" ref={ref}>
+    <section className="container -mt-20" ref={ref}>
       <div className="grid max-w-full grid-cols-1 gap-12 mx-auto text-center md:grid-cols-3">
         <div className="p-8 transition-transform duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105">
           <div className="flex justify-center mb-4 text-6xl text-primary">

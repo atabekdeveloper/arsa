@@ -9,6 +9,7 @@ import {
   Services,
   Advantages,
   Experience,
+  Map,
 } from 'src/components/blocks';
 import { MdKeyboardArrowUp } from 'react-icons/md';
 
@@ -37,6 +38,7 @@ export const Layout: React.FC = () => {
       <main className="flex-auto">
         <Banner />
         <About />
+        <Map />
         <Experience />
         <Advantages />
         <Services />
