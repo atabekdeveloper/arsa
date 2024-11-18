@@ -4,9 +4,9 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 
-import b1 from 'src/assets/images/banner/1.webp';
-import b2 from 'src/assets/images/banner/2.webp';
-import b3 from 'src/assets/images/banner/3.webp';
+import b1 from 'src/assets/images/banner/4.webp';
+import b2 from 'src/assets/images/banner/5.webp';
+import b3 from 'src/assets/images/banner/6.webp';
 
 import './style.css';
 
