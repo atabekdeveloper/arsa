@@ -4,13 +4,15 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 
-import b1 from 'src/assets/images/banner/4.webp';
-import b2 from 'src/assets/images/banner/5.webp';
-import b3 from 'src/assets/images/banner/6.webp';
+import b4 from 'src/assets/images/banner/4.webp';
+import b5 from 'src/assets/images/banner/5.webp';
+import b6 from 'src/assets/images/banner/6.webp';
+import b7 from 'src/assets/images/banner/7.webp';
+import b8 from 'src/assets/images/banner/8.webp';
 
 import './style.css';
 
-const banners = [b1, b2, b3];
+const banners = [b4, b5, b6, b7, b8];
 
 export const Banner: React.FC = () => {
   const { t } = useTranslation();
